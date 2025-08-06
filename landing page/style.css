@@ -1,0 +1,328 @@
+
+  *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100vh;
+  background-color: lemonchiffon;
+  overflow-x: hidden;
+  font-family: 'Arial',san-serif;
+  
+}
+.home{
+  width:100%;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#main{
+  width:100%;
+  position:relative;
+  padding:0;
+  margin:0;
+    aspect-ratio:16/9;
+  background-size: cover;
+  
+
+}
+#main img{
+  width:100%;
+  height:auto;
+  display: block;
+  object-fit: cover;
+}
+#small{
+  position:absolute;
+  aspect-ratio:3/4;
+  bottom:10%;
+  right:5%;
+  width:30vw;
+  max-width: 350px;
+  max-height: 400px;
+  z-index:10;
+  
+}
+#small img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  
+}
+
+.heading{
+  font-size: clamp(1.5em,5vw,6em);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  position:absolute;
+  bottom:10%;
+  background: url("lake.jpg");
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:transparent;
+ 
+  z-index: 10;
+  flex-wrap:no wrap;
+  margin:1em;
+  
+  
+}
+#top-text{
+  position:absolute;
+  writing-mode: vertical-rl;
+  text-align: start;
+  font-size: clamp(0.2em,3vw,2em);
+  color: darkolivegreen;
+  font-weight: bold;
+  
+}
+  #header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    margin-top:1em;
+    
+  }
+#header #navbar{
+  
+  display:flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+#header #navbar a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: clamp(0.6em,3vw,4em);
+  font-weight: bold;
+  background: url("lake.jpg");
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+  
+  
+  
+} 
+#p{
+  text-transform: uppercase;
+  font-size: 0.5em;
+  top:10em;
+  z-index: 100;
+  color:white;
+  
+  
+}
+#about{
+  width:100%;
+  box-sizing: border-box;
+  
+}
+#main-about{
+  width:100vw;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  
+}
+#left{
+  position:relative;
+  width:65%;
+  height:50%;
+  margin:1em 0.6em;
+  margin-top:1em;
+}
+#left img{
+  width:100%;
+  height:100%;
+}
+#right{
+  width:30%;
+  height:30%;
+  margin: 2em 1em;
+  margin-top:7em;
+  
+}
+#right img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  
+  
+}
+.secText{
+  position:absolute;
+  z-index: 10;
+  font-size: clamp(0.1em,2vw,3em);
+  font-weight: bold;
+  padding:1em;
+  padding-left: 3em;
+  flex-wrap: wrap;
+  left:10%;
+  color: rgb(178, 89, 25);
+  
+  
+}
+#right p{
+  font-size: clamp(0.1rem,3vw,3em);
+  margin-bottom:1em;
+}
+#left h1{
+  font-size: clamp(2em,6vw,6em);
+  font-weight: bold;
+  padding-top:0.5em;
+  /* color: transparent;
+  background: url("lake.jpg"); */
+  
+}
+.headPara{
+  /* font-size: clamp(0.1em,3vw,3em); */
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+ 
+}
+#about .last{
+  margin:2em 3em;
+  padding-bottom: 4em;
+  font-size: clamp(0.1em,2vw,5em);
+}
+#value{
+  width:100%;
+  max-width: 100vw;
+  padding:0;
+  margin:0;
+  
+}
+#value h1{
+  font-size: clamp(2em,6vw,6em);
+  margin-left:1em;
+  margin-top:1em;
+  font-weight: bold;
+  background: url("water.jpg");
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:transparent;
+  
+  /* color: rgb(3, 115, 115);
+  text-shadow: 0px 0px 10px cyan; */
+  
+  
+  
+}
+.core-value{
+  padding:0;
+  margin:0;
+  width:100%;
+  position:relative;
+      
+}
+.core-value img{
+  aspect-ratio:16/9;
+  width:100%;
+  height:auto;
+  display: block;
+  
+}
+.core-card{
+  position:absolute;
+  top:20%;
+  width:100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.core-card .card{
+  flex: 1 1 30%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: lemonchiffon;
+  margin:0.5em;
+  border:2px solid black;
+  text-align: center;
+  padding:0.2em;
+  
+  
+  
+  
+  
+}
+.card h2{
+  font-size: clamp(0.5em,3vw,2em);
+  
+}
+.card p{
+  font-size:clamp(0.5em,3vw,2em);
+}
+#lodging{
+  
+  width:100%;
+  max-width: 100vw;
+  margin:0;
+  padding:0;
+  
+}
+#lodging h1{
+  margin-top:1em;
+  margin-left:1em;
+  font-weight: bold;
+  font-size: 70px;
+  /* color: transparent;
+  background: url("lake.jpg"); */
+  
+}
+#lodging p{
+  margin: 10px;
+  font-size: 20px;
+}
+.lodg-main{
+  width:100%;
+  margin:0;
+  padding:0;
+  display: flex;
+  
+  
+}
+ .img1{
+   aspect-ratio:1/1;
+  width:40%;
+  height:30%;
+  margin: 1em;
+}
+.img2{
+  aspect-ratio:4/3;
+  margin-top:2em;
+  width:60%;
+  height:70%;
+  margin:1em;
+}
+p{
+  font-size: clamp(0.3em,2em,0.8em);
+  text-align: center;
+  text-transform: uppercase;
+}
+.foot p{
+  font-size: clamp(0.2em,2vw,0.5em);
+  text-align: center;
+  border:2px solid darkolivegreen;
+}
+section{
+  
+  border:2px solid palegoldenrod;
+}
+
+
+
+
+
+
